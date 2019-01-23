@@ -5,10 +5,20 @@ $('.ui-font-family>.title').on('click',function(){
   if($('.ui-font-family').hasClass('open')){
     $('.ui-font-family').removeClass('open');
   }else{
-
+    layer_clear();
     $('.ui-font-family').addClass('open');
   }
 });
+//폰트 사이즈 변경 컨트롤
+$('.ui-font-size>.title').on('click',function(){
+  if($('.ui-font-size').hasClass('open')){
+    $('.ui-font-size').removeClass('open');
+  }else{
+    layer_clear();
+    $('.ui-font-size').addClass('open');
+  }
+});
+
 //폰트 스타일 변경 컨트롤
 $('.ui-font-style>li>a').on('click',function(){
   var li = $(this).parent();
@@ -19,6 +29,8 @@ $('.ui-font-style>li>a').on('click',function(){
     li.addClass('on')
   }
 });
+
+
 //하단 메뉴들 컨트롤
 $('footer>.menu>li>a').on('click',function(){
   var li = $(this).parent();
@@ -136,6 +148,8 @@ $('.print-list .btn-close').on('click',function(){
 /* 현재 떠있는 레이어창 제거(왼쪽 레이어 겹치는 현상때문에 만든함수)*/
 function layer_clear(){
   $('.ui-font-style>li:nth-child(4)').removeClass('on');
+  $('.ui-font-family').removeClass('open');
+  $('.ui-font-size').removeClass('open');
   $('.ui-util>li').removeClass('open');
   $('.ui-util2>li').removeClass('open');
   $('.write-sends').removeClass('open');
