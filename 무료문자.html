@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko" class="freeMessage">
+  <head>
+    <meta charset="utf-8">
+    <title>우리반알림장</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/nanoscroller.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a href="javascript:;">알림장</a></li>
+        <li class="new"><a href="javascript:;">앨범</a></li>
+        <li class="on"><a href="javascript:;">무료문자</a></li>
+      </ul>
+      <a href="javascript:;" class="btn-juso">주소록</a>
+      <div class="jusoUpload">
+        <h3>주소록</h3>
+        <a href="javascript:;" class="file-autoup">파일로 일괄 등록</a>
+        <div class="field">
+          <ul>
+            <li>
+              <label>이름</label>
+              <input type="text" class="name">
+            </li>
+            <li>
+              <label>연락처</label>
+              <input type="text" class="phone">
+            </li>
+          </ul>
+          <a href="javascript:;" class="btn-add">추가하기</a>
+        </div>
+        <div class="ui">
+          <ul>
+            <li><a href="javascript:;">전체 선택</a></li>
+            <li><a href="javascript:;">전체 해제</a></li>
+            <li><a href="javascript:;">선택 삭제</a></li>
+          </ul>
+        </div>
+        <div class="juso-list">
+          <ul>
+            <li class="title">
+              <span><label><input type="checkbox"><span class="checkmark"></span>이름</label></span>
+              <span>연락처</span>
+              <span>앱 설치 여부</span>
+            </li>
+          </ul>
+          <div class="cont nano">
+            <ul class="nano-content">
+              <li>
+                <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                <span>010-0000-0001</span>
+                <span>설치</span>
+              </li>
+              <li>
+                <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                <span>010-0000-0001</span>
+                <span>설치</span>
+              </li>
+              <li>
+                <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                <span>010-0000-0001</span>
+                <span>설치</span>
+              </li>
+              <li>
+                <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                <span>010-0000-0001</span>
+                <span>설치</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="javascript:;" class="btn-close">주소록 닫기</a>
+      </div>
+    </header>
+    <section>
+      <div class="grid-msg">
+        <div class="message-send">
+          <ul class="send-num">
+            <li>발송 가능 건수:<span>100</span></li>
+            <li>사용한 발송 건수:<span>0</span></li>
+          </ul>
+          <div class="title">
+            <label>제목</label>
+            <input type="text">
+          </div>
+          <div class="cont">
+            <textarea rows="17" placeholder="메시지를 입력하세요."></textarea>
+          </div>
+          <ul class="ui">
+            <li><a href="#">문자함</a></li>
+            <li><a href="#">저장하기</a></li>
+            <li><a href="#">다시쓰기</a></li>
+          </ul>
+          <ul class="btn-wrap">
+            <li><a href="#">보내기</a></li>
+            <li><a href="#">예약설정</a></li>
+          </ul>
+        </div>
+        <div class="msg-cont">
+          <ul class="tab-a">
+            <li><a href="#">학급명부</a></li>
+            <li><a href="#">학급명부관리</a></li>
+            <li><a href="#">발송 결과조회</a></li>
+            <li class="on"><a href="#">발송 예약조회</a></li>
+          </ul>
+          <div class="list">
+            <table class="table-a">
+              <thead>
+                <tr>
+                  <th>학생명</th>
+                  <th>학부모명</th>
+                  <th>휴대폰 번호</th>
+                  <th>수신방법</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text"></td>
+                  <td><input type="text"></td>
+                  <td><input type="text"><a href="#" class="add-a">추가</a></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="btn-wrap">
+              <a href="#" class="all-del">전체삭제</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 컨텐츠 영역 end -->
+    <script type="text/javascript" src="js/common-ui.js"></script>
+  </body>
+</html>

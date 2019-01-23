@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko" class="album">
+  <head>
+    <meta charset="utf-8">
+    <title>우리반알림장</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/nanoscroller.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a href="javascript:;">알림장</a></li>
+        <li class="on new"><a href="javascript:;">앨범</a></li>
+        <li><a href="javascript:;">무료문자</a></li>
+      </ul>
+      <a href="javascript:;" class="btn-juso">주소록</a>
+      <div class="jusoUpload">
+        <h3>주소록</h3>
+        <a href="javascript:;" class="file-autoup">파일로 일괄 등록</a>
+        <div class="field">
+          <ul>
+            <li>
+              <label>이름</label>
+              <input type="text" class="name">
+            </li>
+            <li>
+              <label>연락처</label>
+              <input type="text" class="phone">
+            </li>
+          </ul>
+          <a href="javascript:;" class="btn-add">추가하기</a>
+        </div>
+        <div class="ui">
+          <ul>
+            <li><a href="javascript:;">전체 선택</a></li>
+            <li><a href="javascript:;">전체 해제</a></li>
+            <li><a href="javascript:;">선택 삭제</a></li>
+          </ul>
+        </div>
+        <div class="juso-list">
+          <ul>
+            <li class="title">
+              <span><label><input type="checkbox"><span class="checkmark"></span>이름</label></span>
+              <span>연락처</span>
+              <span>앱 설치 여부</span>
+            </li>
+          </ul>
+          <div class="cont nano">
+            <ul class="nano-content">
+              <li>
+                <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                <span>010-0000-0001</span>
+                <span>설치</span>
+              </li>
+              <li>
+                <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                <span>010-0000-0001</span>
+                <span>설치</span>
+              </li>
+              <li>
+                <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                <span>010-0000-0001</span>
+                <span>설치</span>
+              </li>
+              <li>
+                <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                <span>010-0000-0001</span>
+                <span>설치</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="javascript:;" class="btn-close">주소록 닫기</a>
+      </div>
+    </header>
+    <!-- 컨텐츠 영역 start -->
+    <section>
+      <div class="grid-album">
+
+        <div class="col">
+          <ul class="menu-a">
+            <li><a href="#" class="btn-a" title="시공초등학교 4학년 3반">시공초등학교 4학년 3반</a></li>
+            <li><a href="#" class="btn-a active" title="시공초등학교 2학년 3반시공초등학교 2학년 3반">시공초등학교 2학년 3반시공초등학교 2학년 3반</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <div class="box editer">
+            <h3>2018.01.03 수요일</h3>
+            <textarea rows="5" placeholder="학부모들에게 우리 아이들의 이야기를 전해주세요."></textarea>
+            <ul class="photoUp-list">
+              <li><a href="#"><img src="img/photo-3.jpg" alt=""></a></li>
+              <li class="btn-up"><a href="#"> </a></li>
+            </ul>
+            <div class="ui">
+              <a href="#" class="up-photo">사진 업로드</a>
+              <a href="#" class="up-video">비디오 업로드</a>
+              <a href="#" class="btn-a gray active">올리기</a>
+            </div>
+            <a href="#" class="btn-close">업로드창 닫기</a>
+          </div>
+          <div class="box post">
+            <h3>2018.01.03 수요일</h3>
+            <div class="ui">
+              <a href="#">수정</a>
+              <a href="#">삭제</a>
+            </div>
+            <div class="cont">
+              <p>
+                각자의 꿈 그리기를 했습니다.<br />
+                경찰, 소방관, 의사, 대통령... 다양한 꿈을 이야기 했습니다.<br />
+                모두들 열정이 정말 대단했어요. 칭찬해 주세요~
+              </p>
+              <ul class="photo-set">
+                <li><img src="img/photo-1.jpg" alt=""></li>
+                <li><img src="img/photo-2.jpg" alt=""></li>
+                <li><img src="img/photo-3.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+
+          <div class="pass-send">
+            <p>비밀번호를 학부모들에게 알려주세요!</p>
+            <span class="pass">20368</span>
+            <a href="#" class="send">비밀번호 전송</a>
+          </div>
+
+          <div class="box juso-list">
+            <div class="ui">
+              <a href="#">전체선택</a>
+              <a href="#">해제</a>
+            </div>
+            <ul>
+              <li class="title">
+                <span><label><input type="checkbox"><span class="checkmark"></span>이름</label></span>
+                <span>연락처</span>
+              </li>
+            </ul>
+            <div class="cont nano">
+              <ul class="nano-content">
+                <li>
+                  <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                  <span>010-0000-0001</span>
+                </li>
+                <li>
+                  <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                  <span>010-0000-0001</span>
+                </li>
+                <li>
+                  <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                  <span>010-0000-0001</span>
+                </li>
+                <li>
+                  <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                  <span>010-0000-0001</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- 컨텐츠 영역 end -->
+    <script type="text/javascript" src="js/common-ui.js"></script>
+  </body>
+</html>

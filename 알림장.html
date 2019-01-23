@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>우리반알림장</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/nanoscroller.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+        <li class="on"><a href="javascript:;">알림장</a></li>
+        <li class="new"><a href="javascript:;">앨범</a></li>
+        <li><a href="javascript:;">무료문자</a></li>
+      </ul>
+      <a href="javascript:;" class="btn-juso">주소록</a>
+      <div class="jusoUpload">
+        <h3>주소록</h3>
+        <a href="javascript:;" class="file-autoup">파일로 일괄 등록</a>
+        <div class="field">
+          <ul>
+            <li>
+              <label>이름</label>
+              <input type="text" class="name">
+            </li>
+            <li>
+              <label>연락처</label>
+              <input type="text" class="phone">
+            </li>
+          </ul>
+          <a href="javascript:;" class="btn-add">추가하기</a>
+        </div>
+        <div class="ui">
+          <ul>
+            <li><a href="javascript:;">전체 선택</a></li>
+            <li><a href="javascript:;">전체 해제</a></li>
+            <li><a href="javascript:;">선택 삭제</a></li>
+          </ul>
+        </div>
+        <div class="juso-list">
+          <ul>
+            <li class="title">
+              <span><label><input type="checkbox"><span class="checkmark"></span>이름</label></span>
+              <span>연락처</span>
+              <span>앱 설치 여부</span>
+            </li>
+          </ul>
+          <div class="cont nano">
+            <ul class="nano-content">
+              <li>
+                <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                <span>010-0000-0001</span>
+                <span>설치</span>
+              </li>
+              <li>
+                <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                <span>010-0000-0001</span>
+                <span>설치</span>
+              </li>
+              <li>
+                <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                <span>010-0000-0001</span>
+                <span>설치</span>
+              </li>
+              <li>
+                <span><label><input type="checkbox"><span class="checkmark"></span>김김김</label></span>
+                <span>010-0000-0001</span>
+                <span>설치</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="javascript:;" class="btn-close">주소록 닫기</a>
+      </div>
+    </header>
+    <aside class="side">
+      <div href="javascript:;" class="ui-font-family">
+        <a href="javascript:;" class="title">고딕</a>
+        <div class="select-cont nano">
+          <ul class="nano-content">
+            <li><a href="javascript:;">굴림</a></li>
+            <li><a href="javascript:;">궁서</a></li>
+            <li><a href="javascript:;">맑은 고딕</a></li>
+            <li><a href="javascript:;">나눔 고딕</a></li>
+            <li><a href="javascript:;">나눔 스퀘어</a></li>
+            <li><a href="javascript:;">본고딕</a></li>
+            <li><a href="javascript:;">나눔 명조</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ui-font-size">
+        <span>32</span>
+        <a href="javascript:;" class="up">폰트 한단계 크게</a>
+        <a href="javascript:;" class="down">폰트 한단계 작게</a>
+      </div>
+      <ul class="ui-font-style">
+        <li><a href="javascript:;">굵게</a></li>
+        <li><a href="javascript:;">이텔릭</a></li>
+        <li><a href="javascript:;">밑줄</a></li>
+        <li><a href="javascript:;">폰트 색상 변경</a>
+          <div class="color-palette">
+            <h3>최근 사용한 색상</h3>
+            <div class="colorset-current">
+              <a href="javascript:;" style="background:#A4A4A4"></a>
+              <a href="javascript:;" style="background:#FFFF1E"></a>
+              <a href="javascript:;" style="background:#FF37A8"></a>
+              <a href="javascript:;" style="background:#41B400"></a>
+              <a href="javascript:;" style="background:#F31919"></a>
+              <a href="javascript:;" style="background:#FFE6E6"></a>
+              <a href="javascript:;" style="background:#575757"></a>
+              <a href="javascript:;" style="background:#000000"></a>
+              <a href="javascript:;" style="background:#FF37A8"></a>
+            </div>
+            <div class="colorset-1">
+              <a href="javascript:;" style="background:#F31919"></a>
+              <a href="javascript:;" style="background:#FFFF1E"></a>
+              <a href="javascript:;" style="background:#41B400"></a>
+              <a href="javascript:;" style="background:#1DFFF8"></a>
+              <a href="javascript:;" style="background:#3347FF"></a>
+              <a href="javascript:;" style="background:#FF37A8"></a>
+              <a href="javascript:;" style="background:#F69090"></a>
+              <a href="javascript:;" style="background:#FFFF97"></a>
+              <a href="javascript:;" style="background:#86CF5D"></a>
+              <a href="javascript:;" style="background:#8EF9F6"></a>
+              <a href="javascript:;" style="background:#6397FF"></a>
+              <a href="javascript:;" style="background:#FF8ECE"></a>
+              <a href="javascript:;" style="background:#FFC7C7"></a>
+              <a href="javascript:;" style="background:#FFFFC1"></a>
+              <a href="javascript:;" style="background:#B5EC95"></a>
+              <a href="javascript:;" style="background:#C5FFFD"></a>
+              <a href="javascript:;" style="background:#AEC9FF"></a>
+              <a href="javascript:;" style="background:#FFBEE3"></a>
+              <a href="javascript:;" style="background:#FFE6E6"></a>
+              <a href="javascript:;" style="background:#FFFFE2"></a>
+              <a href="javascript:;" style="background:#DDFFC9"></a>
+              <a href="javascript:;" style="background:#E1FFFE"></a>
+              <a href="javascript:;" style="background:#D2E1FF"></a>
+              <a href="javascript:;" style="background:#FFD6EE"></a>
+              <a href="javascript:;" style="background:#FFFFFF"></a>
+              <a href="javascript:;" style="background:#C1C1C1"></a>
+              <a href="javascript:;" style="background:#989898"></a>
+              <a href="javascript:;" style="background:#707070"></a>
+              <a href="javascript:;" style="background:#575757"></a>
+              <a href="javascript:;" style="background:#000000"></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <hr>
+      <ul class="ui-util">
+        <li class="new"><a href="javascript:;">스티커</a>
+          <div class="stickr-list nano">
+            <ul class="nano-content">
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="img/stickr-sample.png" alt=""></a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:;">특수문자</a>
+          <div class="ex-list">
+            <ul>
+              <li><a href="javascript:;">-</a></li>
+              <li><a href="javascript:;">/</a></li>
+              <li><a href="javascript:;">:</a></li>
+              <li><a href="javascript:;">;</a></li>
+              <li><a href="javascript:;">(</a></li>
+              <li><a href="javascript:;">)</a></li>
+              <li><a href="javascript:;">\</a></li>
+              <li><a href="javascript:;">&</a></li>
+              <li><a href="javascript:;">@</a></li>
+              <li><a href="javascript:;">"</a></li>
+              <li><a href="javascript:;">.</a></li>
+              <li><a href="javascript:;">,</a></li>
+              <li><a href="javascript:;">?</a></li>
+              <li><a href="javascript:;">!</a></li>
+              <li><a href="javascript:;">[</a></li>
+              <li><a href="javascript:;">]</a></li>
+              <li><a href="javascript:;">{</a></li>
+              <li><a href="javascript:;">}</a></li>
+              <li><a href="javascript:;">#</a></li>
+              <li><a href="javascript:;">%</a></li>
+              <li><a href="javascript:;">^</a></li>
+              <li><a href="javascript:;">*</a></li>
+              <li><a href="javascript:;">+</a></li>
+              <li><a href="javascript:;">=</a></li>
+              <li><a href="javascript:;">_</a></li>
+              <li><a href="javascript:;">|</a></li>
+              <li><a href="javascript:;">~</a></li>
+              <li><a href="javascript:;">&lt;</a></li>
+              <li><a href="javascript:;">&gt;</a></li>
+              <li><a href="javascript:;">$</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="new"><a href="javascript:;">상용문구</a>
+          <div class="custom-mungu">
+            <div>
+              <h3>추천 상용문구</h3>
+              <div class="ui-select">
+                <label>주제선택</label>
+                <a href="javascript:;" class="title">가정 협조사항</a>
+                <div class="cont nano">
+                  <ul class="cont nano-content">
+                    <li><a href="javascript:;">가정 협조사항</a></li>
+                    <li><a href="javascript:;">주제 별 안전교육</a></li>
+                    <li><a href="javascript:;">학교 생활 안전교육</a></li>
+                    <li><a href="javascript:;">인성/보건교육</a></li>
+                    <li><a href="javascript:;">가정 협조사항</a></li>
+                    <li><a href="javascript:;">주제 별 안전교육</a></li>
+                    <li><a href="javascript:;">학교 생활 안전교육</a></li>
+                    <li><a href="javascript:;">인성/보건교육</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mungu-list nano" style="height:485px">
+                <ul class="nano-content">
+                  <li class="red">
+                    <p>친구들끼리 고운말 사용하기</p>
+                  </li>
+                  <li>
+                    <p>친구들끼리 고운말 사용하기</p>
+                  </li>
+                  <li>
+                    <p>친구들끼리 고운말 사용하기</p>
+                  </li>
+                  <li>
+                    <p>친구들끼리 고운말 사용하기</p>
+                  </li>
+                  <li>
+                    <p>친구들끼리 고운말 사용하기</p>
+                  </li>
+                  <li>
+                    <p>친구들끼리 고운말 사용하기</p>
+                  </li>
+                  <li>
+                    <p>친구들끼리 고운말 사용하기</p>
+                  </li>
+                  <li>
+                    <p>친구들끼리 고운말 사용하기</p>
+                  </li>
+                  <li>
+                    <p>친구들끼리 고운말 사용하기</p>
+                  </li>
+                  <li>
+                    <p>친구들끼리 고운말 사용하기</p>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+            <div>
+              <h3>내가 만든 상용문구</h3>
+              <div class="mungu-list nano" style="height:520px">
+                <ul class="nano-content">
+                  <li class="red">
+                    <div class="ui">
+                      <a href="javascript:;" class="del">삭제</a>
+                    </div>
+                    <p>방과후 신청 기간입니다. 다음주까지 제출해 주세요~</p>
+                  </li>
+                  <li>
+                    <div class="ui">
+                      <a href="javascript:;" class="del">삭제</a>
+                    </div>
+                    <p>방과후 신청 기간입니다. 다음주까지 제출해 주세요~</p>
+                  </li>
+                  <li>
+                    <div class="ui">
+                      <a href="javascript:;" class="del">삭제</a>
+                    </div>
+                    <p>방과후 신청 기간입니다. 다음주까지 제출해 주세요~</p>
+                  </li>
+                  <li>
+                    <div class="ui">
+                      <a href="javascript:;" class="del">삭제</a>
+                    </div>
+                    <p>방과후 신청 기간입니다. 다음주까지 제출해 주세요~</p>
+                  </li>
+                  <li>
+                    <div class="ui">
+                      <a href="javascript:;" class="del">삭제</a>
+                    </div>
+                    <p>방과후 신청 기간입니다. 다음주까지 제출해 주세요~</p>
+                  </li>
+                  <li>
+                    <div class="ui">
+                      <a href="javascript:;" class="del">삭제</a>
+                    </div>
+                    <p>방과후 신청 기간입니다. 다음주까지 제출해 주세요~</p>
+                  </li>
+                  <li>
+                    <div class="ui">
+                      <a href="javascript:;" class="del">삭제</a>
+                    </div>
+                    <p>방과후 신청 기간입니다. 다음주까지 제출해 주세요~</p>
+                  </li>
+                  <li>
+                    <div class="ui">
+                      <a href="javascript:;" class="del">삭제</a>
+                    </div>
+                    <p>방과후 신청 기간입니다. 다음주까지 제출해 주세요~</p>
+                  </li>
+                  <li>
+                    <div class="ui">
+                      <a href="javascript:;" class="del">삭제</a>
+                    </div>
+                    <p>방과후 신청 기간입니다. 다음주까지 제출해 주세요~</p>
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+            <div>
+              <h3>새 문구 만들기</h3>
+              <textarea rows="19" cols="80" placeholder="내용을 입력해주세요."></textarea>
+              <div class="ui">
+                <a href="javascript:;" class="add">추가하기</a>
+              </div>
+            </div>
+            <a class="btn-close" href="javascript:;">닫기</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="ui-util2">
+        <li><a href="javascript:;">인쇄</a>
+          <div class="print-list">
+            <h3>프린트</h3>
+            <div class="cont">
+              asdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfa sdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfa sdfsdfasdfasdfasdfsdfasdfasdfas dfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdfasdfasdfasdfsdf
+              <!--프린트 레이어 내용-->
+            </div>
+            <a href="#" class="btn-print">인쇄버튼</a>
+            <a href="javascript:;" class="btn-close">프린트 레이어 닫기</a>
+          </div>
+        </li>
+        <li><a href="javascript:;">스킨</a>
+          <div class="skin-list">
+            <div class="nano">
+              <div class="colorset-1 nano-content">
+                <a href="javascript:;" style="background:#F31919"></a>
+                <a href="javascript:;" style="background:#FFFF1E"></a>
+                <a href="javascript:;" style="background:#41B400"></a>
+                <a href="javascript:;" style="background:#1DFFF8"></a>
+                <a href="javascript:;" style="background:#3347FF"></a>
+                <a href="javascript:;" style="background:#FF37A8"></a>
+                <a href="javascript:;" style="background:#F69090"></a>
+                <a href="javascript:;" style="background:#FFFF97"></a>
+                <a href="javascript:;" style="background:#86CF5D"></a>
+                <a href="javascript:;" style="background:#8EF9F6"></a>
+                <a href="javascript:;" style="background:#6397FF"></a>
+                <a href="javascript:;" style="background:#FF8ECE"></a>
+                <a href="javascript:;" style="background:#FFC7C7"></a>
+                <a href="javascript:;" style="background:#FFFFC1"></a>
+                <a href="javascript:;" style="background:#B5EC95"></a>
+                <a href="javascript:;" style="background:#C5FFFD"></a>
+                <a href="javascript:;" style="background:#AEC9FF"></a>
+                <a href="javascript:;" style="background:#FFBEE3"></a>
+                <a href="javascript:;" style="background:#FFE6E6"></a>
+                <a href="javascript:;" style="background:#FFFFE2"></a>
+                <a href="javascript:;" style="background:#DDFFC9"></a>
+                <a href="javascript:;" style="background:#E1FFFE"></a>
+                <a href="javascript:;" style="background:#D2E1FF"></a>
+                <a href="javascript:;" style="background:#FFD6EE"></a>
+                <a href="javascript:;" style="background:#FFFFFF"></a>
+                <a href="javascript:;" style="background:#C1C1C1"></a>
+                <a href="javascript:;" style="background:#989898"></a>
+                <a href="javascript:;" style="background:#707070"></a>
+                <a href="javascript:;" style="background:#575757"></a>
+                <a href="javascript:;" style="background:#000000"></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="javascript:;">정보수정</a></li>
+      </ul>
+    </aside>
+    <!-- 컨텐츠 영역 start -->
+    <section>
+      <div class="widget-title">
+        <div class="fl">
+          <span class="style-1">시공초등학교 4학년 2반</span>
+          <div class="select-a classSelect">
+            <a href="javascript:;" class="select-title btn-a">클래스 선택</a>
+            <div class="select-cont nano">
+              <ul class="nano-content">
+                <li><a href="javascript:;">클래스1</a></li>
+                <li><a href="javascript:;">클래스2</a></li>
+                <li><a href="javascript:;">클래스3</a></li>
+                <li><a href="javascript:;">클래스4</a></li>
+                <li><a href="javascript:;">클래스5</a></li>
+                <li><a href="javascript:;">클래스6</a></li>
+                <li><a href="javascript:;">클래스7</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="date-select">
+          <a href="javascript:;" class="btn-prev">이전</a>
+          <span class="date">6월 5일(화)</span>
+          <a href="javascript:;" class="btn-next">다음</a>
+        </div>
+        <div class="fr">
+          <a href="javascript:;" class="btn-a write-sends-open">작성/수신내역</a>
+          <div class="write-sends">
+            <div class="calendar">
+              <h3>2018년 11월</h3>
+              <div class="ui">
+                <a href="javascript:;" class="prev">이전</a>
+                <a href="javascript:;" class="next">다음</a>
+              </div>
+              <ul class="clender-list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li><a href="javascript:;">1</a></li>
+                <li><a href="javascript:;">2</a></li>
+                <li class="d"><a href="javascript:;">3</a></li>
+                <li class="d"><a href="javascript:;">4</a></li>
+                <li><a href="javascript:;">5</a></li>
+                <li><a href="javascript:;">6</a></li>
+                <li><a href="javascript:;">7</a></li>
+                <li><a href="javascript:;">8</a></li>
+                <li><a href="javascript:;">9</a></li>
+                <li class="d"><a href="javascript:;">10</a></li>
+                <li class="d"><a href="javascript:;">11</a></li>
+                <li class="active"><a href="javascript:;">12</a></li>
+                <li><a href="javascript:;">13</a></li>
+                <li><a href="javascript:;">14</a></li>
+                <li><a href="javascript:;">15</a></li>
+                <li><a href="javascript:;">16</a></li>
+                <li class="d"><a href="javascript:;">17</a></li>
+                <li class="d"><a href="javascript:;">18</a></li>
+                <li><a href="javascript:;">19</a></li>
+                <li><a href="javascript:;">20</a></li>
+                <li><a href="javascript:;">21</a></li>
+                <li><a href="javascript:;">22</a></li>
+                <li><a href="javascript:;">23</a></li>
+                <li class="d"><a href="javascript:;">24</a></li>
+                <li class="d"><a href="javascript:;">25</a></li>
+                <li><a href="javascript:;">26</a></li>
+                <li><a href="javascript:;">27</a></li>
+                <li><a href="javascript:;">28</a></li>
+                <li><a href="javascript:;">29</a></li>
+                <li><a href="javascript:;">30</a></li>
+              </ul>
+              <a href="javascript:;" class="allSave">알림장 전체 저장</a>
+            </div>
+            <div class="write-send-history">
+              <div class="ui">
+                <a href="javascript:;" class="prev">이전</a>
+                <span>2018-11-12 금 24:59</span>
+                <a href="javascript:;" class="next">다음</a>
+              </div>
+              <div class="write-wrap">
+                <h3>작성내역</h3>
+                <div class="ui">
+                  <a href="javascript:;" class="modify">수정</a>
+                </div>
+                <div class="cont nano">
+                  <div class="nano-content">
+                    1. 우체통) 바름이 통장<br />
+                    2. 10분 이상 책 읽기<br />
+                    줄넘기 연습하기<br />
+                    3. 실내화 빨아오기<br />
+                    4. 오늘의 안전) 운동장 놀이기구 여러 명이 함께 타지 않기, 엘리베이터 안에서 <br />
+                    장난하지 않기<br />
+                    5. 건강검진 마감이 다음 주 금요일까지입니다. 아직 검진 받지 않은 친구는 <br />
+                    서둘러서 해주세요.<br />
+                  </div>
+                </div>
+                <div class="files">
+                  <h4>첨부파일</h4>
+                  <ul>
+                    <li><a href="javascript:;">방과후 만족도 조사.hwp</a></li>
+                    <li><a href="javascript:;">옥토끼 우주센터 체험 모습.jpg</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="send-wrap">
+                <h3>수신내역</h3>
+                <div class="juso-list">
+                  <ul>
+                    <li class="title">
+                      <span><label>이름</label></span>
+                      <span>수신방법</span>
+                      <span>수신확인</span>
+                    </li>
+                  </ul>
+                  <div class="cont nano">
+                    <ul class="nano-content">
+                      <li>
+                        <span><label>김김김</label></span>
+                        <span>우리반알림</span>
+                        <span><strong>읽음</strong></span>
+                      </li>
+                      <li>
+                        <span><label>김김김</label></span>
+                        <span>우리반알림</span>
+                        <span><strong>읽음</strong></span>
+                      </li>
+                      <li>
+                        <span>김김김</label></span>
+                        <span>우리반알림</span>
+                        <span><strong>읽음</strong></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="tip">* 수신 방법은 지난번 알림장 수신 시점을 기준으로 합니다.</p>
+                <p class="tip">* 알림장을 문자로 받는 분은 수신 여부를 알 수 없습니다.</p>
+              </div>
+            </div>
+            <a href="javascript:;" class="btn-close">작성/수신내역 닫기</a>
+          </div>
+          <div class="select-a sound-onoff soundOn"><!--soundOn 클래스 : 사운드 플레이-->
+            <a href="#" class="sound-onoff-toggle">sound-onoff</a>
+            <a href="javascript:;" class="select-title btn-a">딩동</a>
+            <div class="select-cont nano">
+              <ul class="nano-content">
+                <li><a href="javascript:;">딩동</a></li>
+                <li><a href="javascript:;">딩동</a></li>
+                <li><a href="javascript:;">딩동</a></li>
+                <li><a href="javascript:;">딩동</a></li>
+                <li><a href="javascript:;">딩동</a></li>
+                <li><a href="javascript:;">딩동</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="widget-cont">
+        1.여름 수업 시간에 수채화 그림을 그립니다.<br />
+        &nbsp;&nbsp;신문지를 준비해 주세요<br /><br />
+        2.방과후 만족도 조사표를 보냅니다.<br />
+        &nbsp;&nbsp;목요일까지 제출해 주세요<br /><br />
+        3.물놀이 안전 사고 예방 교육 보기<br />
+        &nbsp;&nbsp;www.youtube.com/watch?v=sDGc5<br /><br />
+        <div class="scale-change-wrap">
+          <div class="cont">
+            <a href="#" class="plus">확대</a>
+            <a href="#" class="controlBar">컨트롤버튼</a>
+            <a href="#" class="minus">축소</a>
+            <a href="#" class="track"></a>
+          </div>
+        </div>
+      </div>
+
+      <a href="javascript:;" class="btn-fullscreen">풀스크린</a>
+    </section>
+    <footer>
+      <ul class="menu">
+        <li><a href="javascript:;">사진/문서 (2)</a><button class="btn-plus">+</button>
+          <ul class="download-list">
+            <li>
+              <a href="javascript:;" class="list">18년 3분기 방과후 어쩌고저쩌고</a>
+              <a href="javascript:;" class="del">삭제</a>
+            </li>
+            <li>
+              <a href="javascript:;" class="list">우주센터 체험학습1.jpg</a>
+              <a href="javascript:;" class="del">삭제</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="javascript:;">주간학습계획 (1)</a><button class="btn-plus">+</a></li>
+        <li><a href="javascript:;">학부모 공지사항</a>
+          <div class="write-form">
+            <textarea rows="5" cols="80" placeholder="내용을 작성해 주세요."></textarea>
+            <a href="javascript:;" class="btn-write">작성완료</a>
+          </div>
+        </li>
+      </ul>
+      <div class="fr">
+        <span class="last-savetime">마지막 저장 12:56</span>
+        <a href="javascript:;" class="go-alrim">알림장 보내기</a>
+      </div>
+    </footer>
+    <!-- 컨텐츠 영역 end -->
+    <script type="text/javascript" src="js/common-ui.js"></script>
+  </body>
+</html>
